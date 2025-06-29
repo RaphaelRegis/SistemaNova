@@ -1,0 +1,11 @@
+[
+    {
+        "cidade": "Boa Nova",
+        "logradouro": "Rua dos doidos",
+        "numero": 10,
+        "id_cliente": 1
+    },
+    {
+        "valor": "10.0"
+    }
+]
