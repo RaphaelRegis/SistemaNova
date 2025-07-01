@@ -30,7 +30,7 @@ public class Servico {
         this.valor = valor;
         this.descricao = descricao;
         this.id_trabalho = id_trabalho;
-        this.estado = Estado.PLANEJADO;
+        this.estado = Estado.ATIVO;
     }
 
 }

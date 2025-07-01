@@ -12,6 +12,7 @@ public interface ServicoService {
     Servico findById(Integer id);
     Servico update(Integer id, ServicoUpdateDTO servicoUpdateDTO);
     Servico delete(Integer id);
+    Servico deleteAllByTrabalho(Integer id_trabalho);
 
 
 
