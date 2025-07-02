@@ -1,0 +1,26 @@
+[
+    {
+        "valor": "200.00",
+        "descricao": "Arrumar fechadura",
+        "id_trabalho": 1
+    },
+    {
+        "valor": "250.00",
+        "descricao": "Arrumar fechadura"
+    },
+    {
+        "valor": "240.00",
+        "descricao": "Arrumar fechadura",
+        "estado": "ATIVO"
+    },
+    {
+        "valor": "240.00",
+        "descricao": "Arrumar fechadura",
+        "estado": "ENTREGUE"
+    },
+    {
+        "valor": "240.00",
+        "descricao": "Arrumar fechadura",
+        "estado": "CANCELADO"
+    }
+]
