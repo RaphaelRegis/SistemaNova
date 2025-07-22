@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.SistemaNovaEnderecos</groupId>
-	<artifactId>Enderecos</artifactId>
+	<artifactId>enderecos-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Enderecos</name>
+	<name>enderecos-service</name>
 	<description>Microsservico dos Enderecos</description>
 	<url/>
 	<licenses>

@@ -1,5 +1,5 @@
 spring:
   application:
-    name: Servicos
+    name: servicos-service
   config:
     import: "optional:configserver:http://localhost:8888"

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.SistemaNova</groupId>
-	<artifactId>Materiais</artifactId>
+	<artifactId>materiais-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Materiais</name>
+	<name>materiais-service</name>
 	<description>Microsservico dos Materiais</description>
 	<url/>
 	<licenses>

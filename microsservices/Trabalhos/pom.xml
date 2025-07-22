@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.SistemaNovaTrabalhos</groupId>
-	<artifactId>Trabalhos</artifactId>
+	<artifactId>trabalhos-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Trabalhos</name>
+	<name>trabalhos-service</name>
 	<description>Microsservico dos Trabalhos</description>
 	<url/>
 	<licenses>
