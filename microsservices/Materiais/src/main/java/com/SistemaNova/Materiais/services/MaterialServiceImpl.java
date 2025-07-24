@@ -43,8 +43,6 @@ public class MaterialServiceImpl implements MaterialService {
         material.setPreco(materialDTO.preco());
         material.setUnidadeMedida(UnidadeMedida.valueOf(materialDTO.unidadeMedida()));
 
-        // ADICIONAR CODIGO PARA ATUALIZAR PRODUTO_MATERIAL
-
         return materialRepository.save(material);
     }
 
@@ -52,7 +50,7 @@ public class MaterialServiceImpl implements MaterialService {
     public Material delete(Integer id) {
         Material material = findById(id);
 
-        // ADICIONAR LOGICA DE EXCLUSAO DO MATERIAL (MATERIAL soh pode ser excluido caso nao esteja em PRODUTO_MATERIAL)
+        // TO DO: adicionar codigo para excluir associacoes com produtos do catalogo
 
         materialRepository.delete(material);
 

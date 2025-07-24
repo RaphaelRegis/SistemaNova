@@ -60,12 +60,19 @@ public class EnderecoServiceImpl implements EnderecoService {
 
         endereco.setDivida(novoValor.toString());
 
-        return enderecoRepository.save(endereco);
+        enderecoRepository.save(endereco);
+
+        // TO DO: adicionar codigo para atualizar divida do cliente
+
+        return endereco;
     }
-    
+
     @Override
     public Endereco delete(Integer id) {
         Endereco endereco = findById(id);
+
+        // TO DO: adicionar codigo para excluir pedidos associados
+
         enderecoRepository.delete(endereco);
 
         return endereco;

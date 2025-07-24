@@ -20,8 +20,11 @@ public class ServicoServiceImpl implements ServicoService {
     @Override
     public Servico save(ServicoSaveDTO servicoSaveDTO) {
         Servico servico = new Servico(servicoSaveDTO.valor(), servicoSaveDTO.descricao(), servicoSaveDTO.id_trabalho());
+        servicoRepository.save(servico);
 
-        return servicoRepository.save(servico);
+        // TO DO: adicionar codigo para atualizar o valor do trabalho
+
+        return servico;
     }
 
     @Override
@@ -54,7 +57,7 @@ public class ServicoServiceImpl implements ServicoService {
             servico = updateEstado(servico, novoEstado);
         }
 
-        // ADICIONAR CODIGO PARA ATUALIZAR VALOR DO TRABALHO
+        // TO DO: adicionar codigo para atualizar valor do trabalho
 
         return servicoRepository.save(servico);
     }
@@ -63,11 +66,13 @@ public class ServicoServiceImpl implements ServicoService {
     public Servico delete(Integer id) {
         Servico servico = findById(id);
 
-        if (servico.getEstado().equals(Estado.ENTREGUE)) {
-            throw new RuntimeException("Impossivel excluir: servico com id (" + id + ") ja entregue!");
-        }
+//        if (servico.getEstado().equals(Estado.ENTREGUE)) {
+//            throw new RuntimeException("Impossivel excluir: servico com id (" + id + ") ja entregue!");
+//        }
 
         servicoRepository.delete(servico);
+
+        // TO DO: adicionar codigo para atualizar valor do trabalho
 
         return servico;
     }

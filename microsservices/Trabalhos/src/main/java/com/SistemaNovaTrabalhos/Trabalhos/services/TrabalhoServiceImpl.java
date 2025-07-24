@@ -43,16 +43,16 @@ public class TrabalhoServiceImpl implements TrabalhoService {
         Trabalho trabalho = findById(id);
 
         // o valor so pode ser mudado se o estado foi diferente de FINALIZADO
-        if (trabalho.getEstado().equals(Estado.FINALIZADO)) {
-            throw new RuntimeException("Impossivel atualizar valor! TRABALHO já FINALIZADO");
-        }
+//        if (trabalho.getEstado().equals(Estado.FINALIZADO)) {
+//            throw new RuntimeException("Impossivel atualizar valor! TRABALHO já FINALIZADO");
+//        }
 
         BigDecimal valorAtual = new BigDecimal(trabalho.getValorTotal());
         BigDecimal novoValor = valorAtual.add(new BigDecimal(trabalhoValorDTO.valor()));
 
         trabalho.setValorTotal(novoValor.toString());
 
-        // ADICIONAR CODIGO PARA ATUALIZAR DIVIDA DO ENDERECO
+        // TO DO: adicionar codigo para atualizar divida do endereco
 
 
         return trabalhoRepository.save(trabalho);
@@ -90,12 +90,12 @@ public class TrabalhoServiceImpl implements TrabalhoService {
         Trabalho trabalho = findById(id);
         
         // o trabalho so pode ser excluido se estiver com estado NEGOCIACAO OU FINALIZADO
-        Estado estado = trabalho.getEstado(); 
-        if (!(estado.equals(Estado.NEGOCIACAO) || estado.equals(Estado.FINALIZADO))) {
-            throw new RuntimeException("Impossivel excluir o trabalho!");
-        }
+//        Estado estado = trabalho.getEstado();
+//        if (!(estado.equals(Estado.NEGOCIACAO) || estado.equals(Estado.FINALIZADO))) {
+//            throw new RuntimeException("Impossivel excluir o trabalho!");
+//        }
 
-        // ADICIONAR CODIGO PARA EXCLUIR TODOS OS SERVICOS E PRODUTOS ASSOCIADOS
+        // TO DO: adicionar codigo para excluir servicos associados
 
         trabalhoRepository.delete(trabalho);
 

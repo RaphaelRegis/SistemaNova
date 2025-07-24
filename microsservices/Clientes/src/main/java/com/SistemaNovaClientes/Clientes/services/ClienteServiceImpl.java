@@ -57,6 +57,9 @@ public class ClienteServiceImpl implements ClienteService {
     public Cliente delete(Integer id) {
 
         Cliente cliente = findById(id);
+
+        // TO DO: codigo para apagar todos os enderecos
+
         clienteRepository.delete(cliente);
 
         return cliente;
