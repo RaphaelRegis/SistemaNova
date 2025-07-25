@@ -90,9 +90,7 @@ public class ProdutoSobMedidaServiceImpl implements ProdutoSobMedidaService {
                 produtoSobMedida.getLargura()
         );
 
-        BigDecimal valorBase = new BigDecimal(materialClient.
-                calcularValorBase(calculoValorBaseDTO));
-
+        BigDecimal valorBase = new BigDecimal(materialClient.calcularValorBase(calculoValorBaseDTO));
         BigDecimal valorTotal = valorBase.multiply(new BigDecimal(margemLucro));
 
         produtoSobMedida.setValorBase(valorBase.toString());

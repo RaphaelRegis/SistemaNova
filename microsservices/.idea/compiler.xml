@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for produtos-sob-medida" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="servicos-service" />
+        <module name="enderecos-service" />
+        <module name="clientes-service" />
+        <module name="catalogo-produtos" />
+        <module name="produtos-sob-medida" />
+        <module name="trabalhos-service" />
+        <module name="demo" />
+        <module name="materiais-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="catalogo-produtos" options="-parameters" />
+      <module name="clientes-service" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="enderecos-service" options="-parameters" />
+      <module name="materiais-service" options="-parameters" />
+      <module name="produtos-sob-medida" options="-parameters" />
+      <module name="servicos-service" options="-parameters" />
+      <module name="trabalhos-service" options="-parameters" />
+    </option>
+  </component>
+</project>

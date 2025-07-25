@@ -18,7 +18,7 @@ public class ProdutoSobMedidaController {
     private ProdutoSobMedidaService produtoSobMedidaService;
 
     @PostMapping
-    public ResponseEntity<ProdutoSobMedida> save(ProdutoSobMedidaSaveDTO produtoSobMedidaSaveDTO) {
+    public ResponseEntity<ProdutoSobMedida> save(@RequestBody ProdutoSobMedidaSaveDTO produtoSobMedidaSaveDTO) {
         return ResponseEntity.ok(produtoSobMedidaService.save(produtoSobMedidaSaveDTO));
     }
 
