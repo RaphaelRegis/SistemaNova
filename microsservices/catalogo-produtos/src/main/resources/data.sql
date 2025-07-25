@@ -1,0 +1,1 @@
+INSERT INTO PRODUTO (id, tipo_produto, margem_lucro, nome) VALUES (1, 1, 0.1, 'Janela 2 folhas');

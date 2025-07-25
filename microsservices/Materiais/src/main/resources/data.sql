@@ -1,0 +1,12 @@
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (1, 1, 'Perfil aluminio lateral 1', 50.0);
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (2, 1, 'Perfil aluminio lateral 2', 50.0);
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (3, 1, 'Perfil aluminio topo 1', 40.0);
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (4, 1, 'Perfil aluminio topo 2', 40.0);
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (5, 2, 'Vidro', 10.0);
+INSERT INTO material (id, unidade_medida, nome, preco) VALUES (6, 0, 'Roldana', 5.0);
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (0, 1, 1, 1, 2, '0.0', '0.0');
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (0, 2, 1, 1, 2, '0.1', '0.0');
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (1, 3, 1, 1, 1, '0.0', '0.0');
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (1, 4, 1, 1, 1, '0.0', '0.1');
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (2, 5, 1, 1, 1, '0.0', '0.0');
+INSERT INTO produto_material (CRITERIO, ID, ID_MATERIAL, ID_PRODUTO, QTD, OFFSET_ALTURA, OFFSET_LARGURA) VALUES (3, 6, 1, 1, 2, '0.0', '0.0');
